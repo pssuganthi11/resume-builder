@@ -269,11 +269,21 @@ export default function Home() {
 
           {/* Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#" className="hover:text-pink-600">Home</a>
-            <a href="#" className="hover:text-pink-600">About Us</a>
-            <a href="#" className="hover:text-pink-600">Our Services</a>
-            <a href="#" className="hover:text-pink-600">Pricing</a>
-            <a href="#" className="hover:text-pink-600">FAQ</a>
+            <a href="#" className="hover:text-pink-600">
+              Home
+            </a>
+            <a href="#" className="hover:text-pink-600">
+              About Us
+            </a>
+            <a href="#" className="hover:text-pink-600">
+              Our Services
+            </a>
+            <a href="#" className="hover:text-pink-600">
+              Pricing
+            </a>
+            <a href="#" className="hover:text-pink-600">
+              FAQ
+            </a>
           </nav>
 
           {/* CTA + Hamburger */}
@@ -295,11 +305,21 @@ export default function Home() {
         {menuOpen && (
           <div className="md:hidden bg-white shadow-lg">
             <nav className="flex flex-col p-4 gap-4 text-sm font-medium">
-              <a href="#" className="hover:text-pink-600">Home</a>
-              <a href="#" className="hover:text-pink-600">About Us</a>
-              <a href="#" className="hover:text-pink-600">Our Services</a>
-              <a href="#" className="hover:text-pink-600">Pricing</a>
-              <a href="#" className="hover:text-pink-600">FAQ</a>
+              <a href="#" className="hover:text-pink-600">
+                Home
+              </a>
+              <a href="#" className="hover:text-pink-600">
+                About Us
+              </a>
+              <a href="#" className="hover:text-pink-600">
+                Our Services
+              </a>
+              <a href="#" className="hover:text-pink-600">
+                Pricing
+              </a>
+              <a href="#" className="hover:text-pink-600">
+                FAQ
+              </a>
               <button className="bg-[#fa1239] hover:bg-pink-700 text-white px-5 py-2 rounded-full font-medium text-sm">
                 Get A Quote
               </button>
@@ -320,11 +340,11 @@ export default function Home() {
                 <Image
                   src="/deserve.png"
                   alt="deserve"
-                  width={900}
-                  height={900}
-                  className="inline-block h-[1.8em] md:h-[2.2em] w-auto object-contain align-baseline"
+                  width={600}
+                  height={600}
+                  className="inline-block h-[1.2em] md:h-[1.6em] w-auto object-contain align-start"
                 />
-                <span className="ml-2">Let’s</span>
+                <span className="ml-2 ">Let’s</span>
               </span>
               <br />
               Make It Happen
@@ -337,10 +357,14 @@ export default function Home() {
               Door And Place Your Name At The Top Of The Shortlist.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="bg-[#fa1239] hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium">
+              <button
+                className="relative border border-pink-600 text-pink-600 px-6 py-3 rounded-full font-medium 
+                     shadow-[0_0_8px_rgba(236,72,153,0.6)] hover:shadow-[0_0_12px_rgba(236,72,153,0.9)] transition"
+              >
                 RESUME PACKAGES
               </button>
-              <button className="border border-pink-600 text-pink-600 hover:bg-pink-50 px-6 py-3 rounded-full font-medium">
+
+              <button className="bg-[#fa1239] text-white px-6 py-3 rounded-full font-medium">
                 CONTACT US
               </button>
             </div>
@@ -348,18 +372,39 @@ export default function Home() {
 
           {/* Right Content */}
           <div className="flex-1 relative flex justify-center items-center">
-            {/* Background Circle */}
-            <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px] rounded-full p-[40px] bg-gradient-to-r from-[#ffd0d8] to-[#fecfd7]">
+            {/* Donut Circle Background */}
+            <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px] rounded-full p-[50px] bg-gradient-to-r from-[#ffd0d8] to-[#fecfd7]">
               <div className="w-full h-full rounded-full bg-[#fedfe4]"></div>
             </div>
+
             {/* Main Image */}
             <Image
               src="/girl2.png"
               alt="student"
-              width={280}
-              height={400}
+              width={380}
+              height={550}
               className="relative z-10 rounded-lg"
             />
+
+            {/* Bottom Left Badge (Instructor Rating) */}
+            <div className="absolute bottom-50 left-6 bg-[#f4ece9] shadow-md px-4 py-4 rounded-lg flex items-center gap-2 z-20">
+              <span className="text-5xl font-bold text-[#1cb098]">4.9</span>
+              <span className="text-sm">
+                ⭐⭐⭐⭐⭐<br /> 
+                <span className="font-bold text-md">Instructor Rating</span>
+              </span>
+            </div>
+
+            {/* Bottom Right Badge (Resume Count) */}
+            <div className="absolute bottom-6 right-6 bg-white shadow-md px-4 py-2 rounded-lg flex items-center gap-2 z-20">
+              <span className="text-secondary text-2xl">
+                <Image src="/cap.png" alt="cap" width={70} height={70}/>
+              </span>
+              <span className="text-sm">
+               <span className="font-extrabold text-lg">260+</span>  <br /> Online Resume <br /> 
+                 Created
+              </span>
+            </div>
           </div>
         </div>
       </section>
