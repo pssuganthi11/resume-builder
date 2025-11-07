@@ -8,10 +8,8 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      {/* Navbar */}
       <header className="bg-white shadow-sm fixed top-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-12 h-12 rounded-full overflow-hidden">
               <Image
@@ -28,7 +26,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             <a href="#" className="hover:text-pink-600">
               Home
@@ -47,12 +44,11 @@ export default function Home() {
             </a>
           </nav>
 
-          {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <button className="hidden md:block bg-[#fa1239] hover:bg-pink-700 text-white px-5 py-2 rounded-full font-medium text-sm">
               Get A Quote
             </button>
-            {/* Hamburger */}
+
             <button
               className="md:hidden text-2xl"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -62,7 +58,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-white shadow-lg">
             <nav className="flex flex-col p-4 gap-4 text-sm font-medium">
@@ -89,10 +84,8 @@ export default function Home() {
         )}
       </header>
 
-      {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#ffc3cd] to-[#ffe3e7] pt-32 pb-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-10">
-          {/* Left Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
               Your Resume
@@ -131,46 +124,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Content */}
           <div className="flex-1 relative flex justify-center items-center">
-            {/* Donut Circle Background */}
-            <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px] rounded-full p-[50px] bg-gradient-to-r from-[#ffd0d8] to-[#fecfd7]">
-              <div className="w-full h-full rounded-full bg-[#fedfe4]"></div>
-            </div>
-
-            {/* Main Image */}
             <Image
-              src="/girl2.png"
+              src="/HeroImage.png"
               alt="student"
               width={380}
               height={550}
               className="relative z-10 rounded-lg"
             />
-
-            {/* Bottom Left Badge (Instructor Rating) */}
-            <div className="absolute bottom-50 left-6 bg-[#f4ece9] shadow-md px-4 py-4 rounded-lg flex items-center gap-2 z-20">
-              <span className="text-5xl font-bold text-[#1cb098]">4.9</span>
-              <span className="text-sm">
-                ⭐⭐⭐⭐⭐<br /> 
-                <span className="font-bold text-md">Instructor Rating</span>
-              </span>
-            </div>
-
-            {/* Bottom Right Badge (Resume Count) */}
-            <div className="absolute bottom-6 right-6 bg-white shadow-md px-4 py-2 rounded-lg flex items-center gap-2 z-20">
-              <span className="text-secondary text-2xl">
-                <Image src="/cap.png" alt="cap" width={70} height={70}/>
-              </span>
-              <span className="text-sm">
-               <span className="font-extrabold text-lg">260+</span>  <br /> Online Resume <br /> 
-                 Created
-              </span>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* What You Get */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <span className="px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium">
